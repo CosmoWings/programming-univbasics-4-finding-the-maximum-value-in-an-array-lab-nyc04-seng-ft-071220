@@ -1,4 +1,12 @@
 def find_max_value(array)
   # Add your solution here
-  array.max
+  highest_number = 0
+  count = 0
+  
+  while count<array.length do
+    if array[count] > highest_number
+      highest_number = array[count]
+    end
+  end
+  highest_number
 end
